@@ -9,11 +9,14 @@ const UseForm = (initialValue) => {
   const [message, setMessage] = useState(false);
   const [values, setValues] = useState(initialValue);
 
-  const handleChange = () => {
-    console.log("this is from useForm-HandleChange");
+  const handleChange = (e) => {
+    // console.log("this is from useForm-HandleChange");
+    setValues({ ...values, [e.target.name]: e.target.value });
   };
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     console.log("This is handleSubmit from useForm.js");
+    setMessage(true);
   };
   return [message, values, handleChange, handleSubmit];
 };
