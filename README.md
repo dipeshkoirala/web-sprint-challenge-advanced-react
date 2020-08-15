@@ -26,17 +26,47 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Interview Questions
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
+## Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
 
+## Ans: =>The stateful components are keeping track of changing data, while stateless components print out what is given to them via props, or they always render the same thing; since props are read only same output is obivioius.
+
 2. Describe the different phases of the component lifecycle.
+
+Ans:=> React lifestyle phases are
+
+1. Birth/Mounting: the component is being built from the ground up.
+2. Growth/Updating,: here we are updating component data , and
+3. Death/Unmounting: Removing the component from the screen
+
+---
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+Mounting Phase: render method is invoked and componentDidMount gets called as well
+componentDidMount()
+
+Updating: In this phase we are updating compnent data.
+componentDidUpdate()
+
+Unmounting / Demounting Phase: this phase includes removing the component from the screen
+componentWillUnmount()
+
+---
+
 4. Define stateful logic.
 
+## Ans:=> Stateful logic in any code is stateful logic if it is using states function that update the state or alter/change the state settling behind the scene except the other functions that is using hooks;Hooks is like a perk that we are adding to the component.
+
 5. Describe how to test a React component with React Testing Library.
+
+Ans:=>
+
+The React Testing Library is a very light-weight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices. Its primary guiding principle is:
+The more your tests resemble the way your software is used, the more confidence they can give you.
+
+---
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
