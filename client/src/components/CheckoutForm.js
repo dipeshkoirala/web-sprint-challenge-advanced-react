@@ -15,7 +15,7 @@ const initialValue = {
 
 const CheckoutForm = () => {
   const [values, message, handleSubmit, handleChange] = UseForm(initialValue);
-
+  //
   /* Not Necessaary for this to be here so take it to useForm.js
   const handleChanges = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
